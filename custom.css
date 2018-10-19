@@ -57,12 +57,17 @@ h2{
 }
 
 a{
-	color:var(--groen-color);
+	color:var(--text-color);
+  font-weight:600;
 }
 
 a:hover{
-    color:#35a8b7;
-    text-decoration: none;
+    color:var(--groengeel-color);
+    text-decoration: underline;
+}
+
+.aktief a, .aktief a:hover{
+    text-decoration: underline;
 }
 
 .material-icons{
@@ -287,7 +292,7 @@ nav ul li{
     z-index: 0;
 }
 
-#hero h3, #hero-engels h3{
+#hero h2, #hero-engels h2{
 	font-family: var(--font-family-text);
 	font-weight: 600;
 	font-size:47px;
@@ -346,7 +351,7 @@ nav ul li{
 	font-family: var(--font-family-text);
 	list-style: none;
 	background: var(--lichtgrijs-color);
-	font-size:22px;
+	font-size:21px;
 	color:white;
 	padding:18px 40px;
 	margin-bottom:12px;
@@ -377,7 +382,7 @@ nav ul li{
 
 .explain, .explain2, .explain3, .explain4, .explain5{
 /*	border:1px solid #6200EE;*/
-	padding:30px;
+	padding:30px 30px 50px;;
 	margin-top:-15px;
 }
 
@@ -399,11 +404,11 @@ nav ul li{
 	font-family: var(--font-family-kop);
 	color:var(--groengeel-color);
 	font-size:36px;
-	padding:10px 0px 0px;
+	padding:10px 0px 10px;
 	background:white;
 	margin-bottom:10px;
 	font-weight: 700;
-	/*text-transform: uppercase;*/
+	text-decoration:underline;
 }
 
 .aktief p{
