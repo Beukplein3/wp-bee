@@ -536,7 +536,7 @@ nav ul li{
 
 
 .column-img {
-	background-image: url('img/missie-column.jpg');
+	background-image: url('img/wm2.jpg');
 	background-repeat: no-repeat;
 	background-color: var(--rood-color);
     background-position: center center;
@@ -565,9 +565,8 @@ margin-top: -40px;
 	font-family: var(--font-family-kop);
 	color:var(--groengeel-color);
 	/*text-transform: uppercase;*/
-	font-weight: 700;
+	font-weight: 600;
 	font-size:32px;
-
 }
 
 .ri-col h3{
@@ -583,7 +582,11 @@ margin-top: -40px;
 	font-family: var(--font-family-text);
 	font-weight: var(--font-w-text);
 	line-height: 1.7em;
-
+}
+.custom{
+  text-transform: uppercase;
+  /* text-decoration: underline; */
+  font-weight:700;
 }
 
 /*************************************************
