@@ -135,23 +135,23 @@ $(document).ready(function() {
 //Bootstrap columns gelijk houden d.m.v. toevoegen class /col-eq-height
 
 jQuery(document).ready(function( $ ){
-  
+
 jQuery( document ).ready(function() {
     var heights = jQuery(".col-eq-height").map(function() {
         return jQuery(this).height();
     }).get(),
 
-    maxHeight = Math.max.apply(null, heights);    
+    maxHeight = Math.max.apply(null, heights);
     jQuery(".col-eq-height").height(maxHeight);
    });
 
-// jquery t.b.v. mobiele menu 
+// jquery t.b.v. mobiele menu
 
   $('#sidebar-btn').click(function(){
     $('#overlay').toggleClass('visible');
   });
 
-  
+
 });
 
 
@@ -167,10 +167,8 @@ jQuery( document ).ready(function() {
     // })
 
 
-
-
-
-
-
-
-
+		
+// enable popovers everywhere
+		$(function () {
+  $('[data-toggle="popover"]').popover()
+})
