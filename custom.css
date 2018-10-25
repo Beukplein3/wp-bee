@@ -17,7 +17,7 @@
 	--rood-color:#e83151!important;
 	--donkergrijs-color:#757780!important;
 	--groen-color:#2c8c99;
-	--text-color:#323a45!important;
+	--text-color:#212529!important;
 	--font-family-text:'Poppins', sans-serif!important;
 	--font-family-kop:'Poppins', sans-serif!important;
 	--font-w-text: 100;
@@ -116,7 +116,7 @@ a:hover{
 /************************************************/
 
 .logo-nav-row{
-	padding-top:30px;
+	padding-top:65px;
 }
 
 .logo{
@@ -129,7 +129,8 @@ a:hover{
 }
 
 .img-logo{
-	max-width:280px;
+	max-width:250px;
+  margin-top:-8px;
 }
 
 .logo:hover{
@@ -140,7 +141,7 @@ a:hover{
 
 nav{
 	float:right;
-	margin-top:40px;
+	margin-top:8px;
 	/*z-index: 10000;*/
 }
 
@@ -589,6 +590,7 @@ margin-top: -40px;
   font-weight:400;
 	line-height: 1.7em;
 }
+
 .custom{
   text-transform: uppercase;
   /* text-decoration: underline; */
