@@ -130,7 +130,6 @@ a:hover{
 
 .img-logo{
 	max-width:250px;
-  margin-top:-8px;
 }
 
 .logo:hover{
@@ -141,7 +140,7 @@ a:hover{
 
 nav{
 	float:right;
-	margin-top:8px;
+	margin-top:10px;
 	/*z-index: 10000;*/
 }
 
@@ -178,15 +177,20 @@ nav ul li{
 }
 
 .lg-switch{
-	margin-left:100px;
+	margin-left:80px;
 	font-family: var(--font-family-text);
 	font-weight: 100;
 	font-size:14px;
 	color:white!important;
+  border: 1px solid white;
+  padding: 4px 8px;
+  z-index:1000;
 }
 
 .lg-switch:hover{
 	text-decoration: none;
+  cursor: pointer;
+  z-index:10000000;
 }
 
 
@@ -198,15 +202,17 @@ nav ul li{
 	right:10px;
 	position: absolute;
 	display: block;
-	background-color: rgba(232, 49, 81, .85);
+	background-color: var(--dark);
+  opacity:.95;
 	text-align: center;
 	transition:left .5s linear;
-	z-index: 1;
+	z-index: -1;
 }
 
 #overlay.visible{
     left:0px!important;
     transition:left .5s linear;
+    z-index:10;
 }
 
 #overlay ul{
@@ -230,13 +236,9 @@ nav ul li{
 
 @media (max-width:991px){
 
-	.lg-switch{
-		margin-left:20px;
-	}
-
-	.img-logo{
-		display: none;
-	}
+  .img-logo {
+    margin-top: -79px;
+}
 
 	nav{
 		display: none;
@@ -553,7 +555,6 @@ nav ul li{
 .col-bg{
 	background-color: #F6F6F6;
 	padding:30px 30px 70px!important;
-	/*border-radius: 10px;*/
 }
 
 #img-up{
@@ -642,7 +643,7 @@ margin-top: -40px;
 /************************************************/
 
 #onder_footer{
-	background: var(--text-color);
+	background: var(--dark);
 	padding:20px 0px 20px;
 }
 
@@ -680,7 +681,15 @@ margin-top: -40px;
 /*************************************************
  * MEDIA QUERIES
 /************************************************/
+@media (max-width:1200px){
 
+  .lg-switch {
+    position: absolute;
+    top: 70px;
+    left:20px;
+
+    }
+}
 
 @media (max-width:480px) {
 
@@ -705,9 +714,27 @@ margin-top: -40px;
     }
 
     #footer h3{
-	font-size:28px;
-	line-height: 1.3em;
-	margin-bottom:30px;
+	   font-size:28px;
+	   line-height: 1.3em;
+	   margin-bottom:30px;
     }
+    .box-left, .box-right{
+    	padding:80px 40px 80px;
+    }
+    #header{
+      height:540px;
+    }
+    .lg-switch {
+      position: absolute;
+      left:10px;
+      top: 50px;
+      }
+      .col-bg{
+      	padding:30px 30px 30px!important;
+      }
+      #cm-img-up{
+      margin-top: -40px;
+      }
+
 
 }
